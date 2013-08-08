@@ -1,0 +1,24 @@
+{
+    "name": "fm/cache",
+    "type": "project",
+    "description": "Library that provides some basic cache classes, as well as an adapter for Guzzle",
+    "keywords": ["cache", "redis", "guzzle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fieg",
+            "email": "jeroen@financial-media.nl"
+        },
+        {
+            "name": "pkruithof",
+            "email": "peter@financial-media.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "guzzle/guzzle": "~3.7"
+    },
+    "autoload": {
+        "psr-0": { "FM\\Cache": "src/" }
+    }
+}
