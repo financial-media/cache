@@ -1,6 +1,6 @@
 <?php
 
-namespace FM\CacheBundle\Cache;
+namespace FM\Cache;
 
 use Predis\Client;
 

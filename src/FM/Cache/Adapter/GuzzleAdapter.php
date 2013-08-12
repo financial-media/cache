@@ -3,6 +3,7 @@
 namespace FM\Cache\Adapter;
 
 use Guzzle\Cache\CacheAdapterInterface;
+use FM\Cache\CacheInterface;
 
 class GuzzleAdapter implements CacheAdapterInterface
 {
