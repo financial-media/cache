@@ -55,7 +55,7 @@ class PredisCache implements CacheInterface
             unset($this->localCache[$key]);
         }
 
-        return $res;
+        return (boolean) $res;
     }
 
     public function clear()

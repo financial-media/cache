@@ -30,4 +30,13 @@ interface CacheInterface
      * @param int    $ttl   Time-to-live
      */
     public function set($key, $value, $ttl = 0);
+
+    /**
+     * Removes the value for a key.
+     *
+     * @param string $key A unique key
+     *
+     * @return boolean True if the key was removed, false otherwise
+     */
+    public function remove($key);
 }
