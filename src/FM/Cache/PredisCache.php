@@ -16,16 +16,25 @@ class PredisCache implements CacheInterface
      */
     protected $localCache = array();
 
+    /**
+     * @param Client $predis
+     */
     public function __construct(Client $predis)
     {
         $this->predis = $predis;
     }
 
+    /**
+     * @inheritdoc
+     */
     public function has($key)
     {
         return array_key_exists($key, $this->localCache) || $this->predis->exists($key);
     }
 
+    /**
+     * @inheritdoc
+     */
     public function get($key)
     {
         if (!array_key_exists($key, $this->localCache)) {
@@ -35,6 +44,9 @@ class PredisCache implements CacheInterface
         return $this->localCache[$key];
     }
 
+    /**
+     * @inheritdoc
+     */
     public function set($key, $value, $ttl = 0)
     {
         $res = $this->predis->set($key, json_encode($value));
@@ -47,6 +59,9 @@ class PredisCache implements CacheInterface
         return $res;
     }
 
+    /**
+     * @inheritdoc
+     */
     public function remove($key)
     {
         $res = $this->predis->del($key);
