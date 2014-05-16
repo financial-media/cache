@@ -4,6 +4,9 @@ namespace FM\Cache;
 
 use Predis\Client;
 
+/**
+ * @deprecated The financial-media/cache library is deprecated. Use treehouselabs/cache instead
+ */
 class PredisCache implements CacheInterface
 {
     /**
@@ -21,6 +24,8 @@ class PredisCache implements CacheInterface
      */
     public function __construct(Client $predis)
     {
+        trigger_error('The financial-media/cache library is deprecated. Use treehouselabs/cache instead', E_USER_DEPRECATED);
+
         $this->predis = $predis;
     }
 

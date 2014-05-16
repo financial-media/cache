@@ -18,6 +18,9 @@
         "php": ">=5.3.3",
         "guzzle/guzzle": "~3.7"
     },
+    "suggest": {
+        "treehouselabs/cache": "For the maintained counterpart of this library"
+    },
     "autoload": {
         "psr-0": { "FM\\Cache": "src/" }
     }

@@ -2,6 +2,9 @@
 
 namespace FM\Cache;
 
+/**
+ * @deprecated The financial-media/cache library is deprecated. Use treehouselabs/cache instead
+ */
 interface CacheInterface
 {
     /**

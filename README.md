@@ -1,4 +1,4 @@
-cache
-=====
+DEPRECATED
+==========
 
-Library that provides some basic cache classes, as well as an adapter for Guzzle
+This library is superseded by https://github.com/treehouselabs/cache
