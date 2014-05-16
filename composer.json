@@ -1,7 +1,7 @@
 {
     "name": "fm/cache",
     "type": "project",
-    "description": "Library that provides some basic cache classes, as well as an adapter for Guzzle",
+    "description": "This library is superseded by https://github.com/treehouselabs/cache",
     "keywords": ["cache", "redis", "guzzle"],
     "license": "MIT",
     "authors": [
