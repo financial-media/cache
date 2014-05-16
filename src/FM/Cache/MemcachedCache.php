@@ -4,6 +4,9 @@ namespace FM\Cache;
 
 use Memcached;
 
+/**
+ * @deprecated The financial-media/cache library is deprecated. Use treehouselabs/cache instead
+ */
 class MemcachedCache implements CacheInterface
 {
     /**
@@ -21,6 +24,8 @@ class MemcachedCache implements CacheInterface
      */
     public function __construct(Memcached $memcached)
     {
+        trigger_error('The financial-media/cache library is deprecated. Use treehouselabs/cache instead', E_USER_DEPRECATED);
+
         $this->memcached = $memcached;
     }
 

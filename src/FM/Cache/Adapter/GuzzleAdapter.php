@@ -5,6 +5,9 @@ namespace FM\Cache\Adapter;
 use FM\Cache\CacheInterface;
 use Guzzle\Cache\CacheAdapterInterface;
 
+/**
+ * @deprecated The financial-media/cache library is deprecated. Use treehouselabs/cache instead
+ */
 class GuzzleAdapter implements CacheAdapterInterface
 {
     /**
@@ -17,6 +20,8 @@ class GuzzleAdapter implements CacheAdapterInterface
      */
     public function __construct(CacheInterface $cache)
     {
+        trigger_error('The financial-media/cache library is deprecated. Use treehouselabs/cache instead', E_USER_DEPRECATED);
+
         $this->cache = $cache;
     }
 
